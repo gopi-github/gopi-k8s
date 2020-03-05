@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nodeapp
+  name: k8s
   labels:
-    app: nodeapp
+    app: k8s
 spec:
   containers:
-    - name: nodeapp
-      image: kammana/nodeapp:tagVersion
+    - name: k8s
+      image: selgo001/v1:latest
       ports:
         - containerPort: 8080
