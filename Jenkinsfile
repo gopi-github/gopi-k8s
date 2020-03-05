@@ -19,7 +19,7 @@ pipeline {
 				sh "kubectl create -f pods.yml"
 				sh "kubectl create -f services.yml"
 			}
-}
+
 }
 }
 }
