@@ -10,7 +10,7 @@ pipeline {
 			steps{
 				withCredentials([string(credentialsId: 'dockerhubpwd', variable: 'dockerhubpwd')]) {
 				sh "docker login -u selgo001 -p ${dockerhubpwd}"
-				sh "docker push v1:latest"
+				sh "docker push selgo001/v1:latest"
 		}
 
 }
