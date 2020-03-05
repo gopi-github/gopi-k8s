@@ -14,7 +14,7 @@ pipeline {
 }
 		}
 }
-		stage{'create containers in Kubernetes Cluster'){
+		stage('create containers in Kubernetes Cluster'){
 			steps{
 				sh "kubectl create -f pods.yml"
 				sh "kubectl create -f services.yml"
